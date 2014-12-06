@@ -1,7 +1,9 @@
 ChristmasUnicornHat
 ===================
 
-Animated sequence of text and Christmas tree for Pimoroni's Unicorn Hat
+Animated sequence of text and Christmas tree for Pimoroni's Unicorn Hat: http://shop.pimoroni.com/products/unicorn-hat
+
+Install the usual unicorn hat drivers from : https://github.com/pimoroni/UnicornHat
 
 Add the following to the /etc/rc.local
 
