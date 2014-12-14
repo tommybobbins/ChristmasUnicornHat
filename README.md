@@ -12,3 +12,7 @@ Add the following to the /etc/rc.local
 Just before the 
 
     exit 0
+
+To convert the Unicorn paint code to real code, this one liner is useful:
+
+    grep "GET /pixel" unicorn_paint.log | awk '{print $7}' | sort | sed -e 's/\/pixel\//unicorn\.set\_pixel\(/g' | sed -e 's/$/)/g' | sed -e 's/\//\,/g'
