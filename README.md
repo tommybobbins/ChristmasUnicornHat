@@ -15,4 +15,4 @@ Just before the
 
 To convert the Unicorn paint code to Python, this one liner is useful:
 
-    grep "GET /pixel" unicorn_paint.log | awk '{print $7}' | sort | sed -e 's/\/pixel\//    unicorn\.set\_pixel\(/g' | sed -e 's/$/)/g' | sed -e 's/\//\,/g'
+    grep "GET /pixel" unicorn_paint.log | awk '{print $7}' | sed -e 's/\/pixel\//    unicorn\.set\_pixel\(/g' | sed -e 's/$/)/g' | sed -e 's/\//\,/g'
